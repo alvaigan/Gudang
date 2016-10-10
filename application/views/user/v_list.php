@@ -44,7 +44,7 @@
 							</a>
 						</h3>
 					</div>
-					<div class="box-body" style="overflow-x: scroll!important;">
+					<div class="box-body" style="overflow-x: auto;">
 						<table class="table table-responsive table-bordered table-stripped table-hover">
 							<thead>
 								<tr>

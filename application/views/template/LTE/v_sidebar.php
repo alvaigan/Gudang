@@ -34,7 +34,7 @@
           </ul>
         </li>
     <li class="treeview">
-      <a href="#">
+      <a href="<?= base_url("History")?>">
         <i class="fa fa-history"></i>
         <span>Riwayat Transaksi</span>
       </a>
