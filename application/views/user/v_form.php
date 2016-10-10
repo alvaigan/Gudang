@@ -3,19 +3,22 @@
 		$title = "Edit Data User";
 
 		$url = "usermanager/do_edit/" . $result->ID_Akun;
+		$hintpw = "(Untuk mengganti, silahkan isi, jika tidak kosongkan saja)";
 	}
 	else {
 		$title = "Tambah Data User";
 
 		$url = "usermanager/do_add/";
+		$hintpw = "Password";
 	}
 ?>
  <div class="content-wrapper">
 	<section class="content-header">
-		<h1><?= $title?><small>SMK Negeri 4 Bandung</small></h1>
+		<h1><?= $title?></h1>
 		<ol class="breadcrumb">
-			<li><a href="#"><i class="fa fa-dashboard"></i> Data</a></li>
-			<li class="active"><?= $title?></li>
+			<li><a href="#"><i class="fa fa-dashboard"></i> Master Data</a></li>
+			<li class="active">Data User</li>
+			<li><?= $title?></li>
 		</ol>
 	</section>
 
@@ -31,7 +34,7 @@
 
 						<div class="form-group">
 							<label for="Password">Password</label>
-							<input type="password" name="Password" class="form-control" id="Password" placeholder="(Untuk mengganti, silahkan isi, jika tidak kosongkan saja)" >
+							<input type="password" name="Password" class="form-control" id="Password" placeholder="<?= $hintpw; ?>" >
 						</div>
 
 						<div class="form-group">

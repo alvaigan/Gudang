@@ -12,9 +12,9 @@
 
 <div class="content-wrapper">
 	<section class="content-header">
-		<h1>Data User<small>Sekolah Ilmu dan Teknologi Hayati</small></h1>
+		<h1>Data User</h1>
 		<ol class="breadcrumb">
-			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+			<li><a href="#"><i class="fa fa-dashboard"></i> Master Data</a></li>
 			<li class="active">Data User</li>
 		</ol>
 	</section>

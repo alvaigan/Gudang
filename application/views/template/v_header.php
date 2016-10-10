@@ -18,8 +18,27 @@
     <!--- style css --->
     <link rel="stylesheet" href="<?= base_url("media");?>/css/style.css">
     <!---Sweetalert css & JS --->
-    <script src="<?= base_url("media")?>/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url("media")?>/dist/sweetalert.css">
+    <script src="<?= base_url("media")?>/dist/sweetalert.min.js"></script>
+    <!--- Inisialisasi Animasi --->
+
+
+    <!--- JavaScript --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="<?= base_url("media");?>/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= base_url("media");?>/js/jquery.backstretch.min.js"></script>
+    <script src="<?= base_url("media");?>/js/scripts.js"></script>
+
+    <script>
+$(document).ready(function(){
+        $("#div1").fadeIn(1000);
+        $("#div2").fadeIn(2000);
+        $("#div3").fadeIn(3500);
+        $("#div41").fadeIn(4000);
+        $("#div5").fadeIn(5000);
+});
+</script>
+
   </head>
   <body>
     <!-- Navbar Atas -->
@@ -30,7 +49,7 @@
 
         <div class="container-fluid" style="align-items:center;display:flex;background-color:#0055AA;margin-top:-20px;padding:15px;">
             <div class="col-lg-1 col-lg-offset-1">
-              <img src="<?= base_url("media");?>/img/logo-itb.png">
+              <img src="<?= base_url("media");?>/img/logo-itb.png" >
           </div>
           <div class="col-lg-5" style="color:white;margin-left:-13px;margin-top:-20px">
             <h3 style="margin-left:15px;">SIMGU - SITH</h3>
@@ -42,6 +61,6 @@
         </div>
         <?php if(!empty($error)) { ?>
         <script type="text/javascript">
-          swal("Login Failed!", "Username atau Password salah!", "warning")
+          swal("Login Failed!", "Username atau Password salah!", "warning");
         </script>
         <?php } ?>

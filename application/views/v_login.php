@@ -14,11 +14,11 @@
 <div class="container">
   <div class="col-lg-12">
     <div class="jumbotron " style="margin-top:10px;">
-      <h1>Welcome to SIMGU - SITH</h2>
-        <p>
+      <h1 style="display:none" id="div1">Welcome to SIMGU - SITH</h2>
+        <p style="display:none" id="div2">
           SIMGU merupakan Sistem Informasi Manajemen Gudang
         </p>
-            <div class="container">
+            <div class="container" style="display:none" id="div41">
               <div class="col-lg-6">
                 <ul class="list-group">
                   <li class="list-group-item">Pengajuan permintaan barang lebih mudah<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
@@ -27,7 +27,7 @@
                 </ul>
               </div>
 
-              <div class="col-lg-6">
+              <div class="col-lg-6" >
                 <ul class="list-group">
                   <li class="list-group-item">Pengajuan permintaan barang lebih mudah<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
                   <li class="list-group-item">Waktu lebih efisien<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
@@ -35,7 +35,7 @@
                 </ul>
               </div>
             </div>
-                <a href="#" class="btn btn-lg btn-info launch-modal" data-modal-id="modal-login" style="width:100%;">LOGIN</a>
+                <a href="#" id="div5" class="btn btn-lg btn-info launch-modal" data-modal-id="modal-login" style="display:none;width:100%;">LOGIN</a>
     </div>
   </div>
 </div>
@@ -78,9 +78,5 @@
         		</div>
         	</div>
         </div>
-
+</body>
         <!-- Javascript -->
-       <script src="<?= base_url("media");?>/js/jquery-1.11.1.min.js"></script>
-       <script src="<?= base_url("media");?>/bootstrap/js/bootstrap.min.js"></script>
-       <script src="<?= base_url("media");?>/js/jquery.backstretch.min.js"></script>
-       <script src="<?= base_url("media");?>/js/scripts.js"></script>

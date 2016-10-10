@@ -6,9 +6,9 @@ class UserManager extends CI_Controller {
     $data['success'] = $this->session->flashdata("success");
     $data['error'] = $this->session->flashdata("error");
 
+    $data['treeview'] = "active";
     $this->load->model("user_model");
     $data ['result'] = $this->user_model->read();
-
     $data['level'] = $this->session->userdata('level');
 		$data ['username']= $this->session->userdata('username');
     $data['view'] = "user/v_list";
@@ -48,18 +48,18 @@ class UserManager extends CI_Controller {
 	}
 
 	function do_edit($id) {
-    if (!empty($this->input->post('password'))) {
+    $pw = $this->input->post('Password');
+    if (empty($pw)) {
     $userdata = array(
                         'Username'  => $this->input->post('Username'),
-                        'Password'  => md5($this->input->post('Password')),
                         'Nama'  => $this->input->post('Nama'),
                         'Level'  => $this->input->post('Level'),
                         );
-                      }
-    if (empty($this->input->post('password'))) {
-        $userdata = array(
+                      } else {
+$userdata = array(
                         'Username'  => $this->input->post('Username'),
                         'Nama'  => $this->input->post('Nama'),
+                        'Password'  => md5($this->input->post('Password')),
                         'Level'  => $this->input->post('Level'),
                         );
                       }

@@ -6,6 +6,8 @@
   <title>SITH - ITB | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!--- Select2 --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?= base_url("media")?>/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -27,10 +29,9 @@
   <link rel="stylesheet" href="<?= base_url("media")?>/plugins/datepicker/datepicker3.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?= base_url("media")?>/plugins/daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="<?= base_url("media")?>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
-  
+
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,67 +63,53 @@
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning">3</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">You have 3 notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <i class="fa fa-warning text-yellow"></i> CRUD Barang, CRUD Transaksi -_-
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
+                      <i class="fa fa-warning text-yellow"></i> Cek Login
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
+                      <i class="fa fa-warning text-yellow"></i> Responsibilitas Tampilan
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="footer"><a href="#">View all</a></li>
+
             </ul>
           </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?= base_url("media")?>/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="<?= base_url("media")?>/img/logo-itb.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?= @$username?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?= base_url("media")?>/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?= base_url("media")?>/img/logo-itb.png" class="img-circle" alt="User Image">
 
                 <p>
-                  <?= @$username?> - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  <?= @$username?>
+                  <small><?= $level?></small>
                 </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="login/logout" class="btn btn-default btn-flat">Sign out</a>
+                <div align="middle">
+                  <a href="Home/logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
