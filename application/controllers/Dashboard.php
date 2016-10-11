@@ -26,7 +26,8 @@ class Dashboard extends CI_Controller {
     }
 
       $data['level'] = $levels;
-
+      $this->load->model("user_model");
+      $data['jumlahuser'] = $this->user_model->count();
     $data ['username']= $this->session->userdata('username');
     $this->load->view("admin",$data);
   }

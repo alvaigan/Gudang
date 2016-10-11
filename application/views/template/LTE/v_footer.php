@@ -20,6 +20,11 @@ $("#namabarang").select2({
 placeholder: "Pilih Barang",
 allowClear: true
 });
+
+$( "#namabarang" ).change(function() {
+	$('#alertinfo').fadeOut(1);
+	$('#alertinfo').fadeIn(2000);
+});
   </script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <!-- Bootstrap 3.3.6 -->

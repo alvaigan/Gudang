@@ -33,10 +33,29 @@
             <li><a href="<?= base_url("/barangmanager")?>"><i class="fa fa-circle-o text-blue"></i> Data Barang</a></li>
           </ul>
         </li>
+        <li class="treeview <?= @$treeview?>">
+              <a href="#">
+                <i class="fa fa-share"></i>
+                <span>Importing Data</span>
+    			<span class="pull-right-container">
+                  <i class="fa fa-folder pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="<?= base_url("/usermanager")?>"><i class="fa fa-circle-o text-blue"></i> Import Data</a></li>
+                <li><a href="<?= base_url("/barangmanager")?>"><i class="fa fa-circle-o text-blue"></i> Riwayat Importing</a></li>
+              </ul>
+            </li>
     <li class="treeview">
       <a href="<?= base_url("History")?>">
         <i class="fa fa-history"></i>
         <span>Riwayat Transaksi</span>
+      </a>
+    </li>
+    <li class="treeview">
+      <a href="<?= base_url("orderlist")?>">
+        <i class="fa fa-exclamation"></i>
+        <span>Order Baru</span>
       </a>
     </li>
     <li class="treeview">

@@ -52,9 +52,9 @@ $(document).ready(function(){
               <img src="<?= base_url("media");?>/img/logo-itb.png" >
           </div>
           <div class="col-lg-5" style="color:white;margin-left:-13px;margin-top:-20px">
-            <h3 style="margin-left:15px;">SIMGU - SITH</h3>
+            <h3 style="margin-left:15px;">SIDANG - SITH</h3>
             <div class="col-lg-12">
-              Sistem Informasi Manajemen Gudang
+              Sistem Gudang
               <br>Sekolah Ilmu Dan Teknologi Hayati
             </div>
           </div>

@@ -29,4 +29,16 @@ class user_model extends CI_Model {
     $this->db->delete("t_account");
   }
 
+  function count() {
+    $query = $this->db->get("t_account");
+    if ($query and $query->num_rows() != 0) {
+      $hasil =  $query->result();
+      $num_rows = $this->db->count_all_results('t_account');
+      return $num_rows;
+    }
+    else {
+      return array();
+    }
+  }
+
 }

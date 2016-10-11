@@ -14,28 +14,32 @@
 <div class="container">
   <div class="col-lg-12">
     <div class="jumbotron " style="margin-top:10px;">
-      <h1 style="display:none" id="div1">Welcome to SIMGU - SITH</h2>
+      <h1 style="display:none" id="div1">Welcome to SIDANG - SITH</h2>
         <p style="display:none" id="div2">
-          SIMGU merupakan Sistem Informasi Manajemen Gudang
+          SIDANG atau Sistem Gudang adalah pengimplementasian Sistem Manajemen Inventaris berbasis Online yang menggunakan Platform Website Responsive.
+          <br>
+          Kelebihan dari SIDANG yaitu :
         </p>
             <div class="container" style="display:none" id="div41">
               <div class="col-lg-6">
                 <ul class="list-group">
                   <li class="list-group-item">Pengajuan permintaan barang lebih mudah<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
-                  <li class="list-group-item">Waktu lebih efisien<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
+                  <li class="list-group-item">Waktu mengakses dapat dilakukan kapanpun dan dimanapun<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
                   <li class="list-group-item">Notifikasi ketika barang sudah dapat diambil<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
                 </ul>
               </div>
 
               <div class="col-lg-6" >
                 <ul class="list-group">
-                  <li class="list-group-item">Pengajuan permintaan barang lebih mudah<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
-                  <li class="list-group-item">Waktu lebih efisien<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
-                  <li class="list-group-item">Notifikasi ketika barang sudah dapat diambil<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
+                  <li class="list-group-item">Mengetahui status pemesanan barang<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
+                  <li class="list-group-item">Mempercepat pencarian riwayat transaksi<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
+                  <li class="list-group-item">Memesan barang yang belum tersedia<span class="glyphicon glyphicon-ok pull-right" style="color:green;"></span></li>
                 </ul>
               </div>
             </div>
-                <a href="#" id="div5" class="btn btn-lg btn-info launch-modal" data-modal-id="modal-login" style="display:none;width:100%;">LOGIN</a>
+            <div class="col-lg-12 text-center">
+                <a align="center" href="#" id="div5" class="btn btn-info launch-modal" data-modal-id="modal-login">SIGN IN</a>
+            </div>
     </div>
   </div>
 </div>
@@ -70,9 +74,11 @@
                               <span class="input-group-addon"> <i class="glyphicon glyphicon-lock"></i></span>
                             </div>
 	                        </div>
-	                        <button type="submit" class="btn btn-block btn-success">LOGIN</button>
+                          <center>
+                            Tekan Enter untuk login
+	                           <!-- <button type="submit" class="btn btn-sm btn-success">OK</button> -->
+                          </center>
 	                    </form>
-
         			</div>
 
         		</div>
@@ -80,3 +86,11 @@
         </div>
 </body>
         <!-- Javascript -->
+        <script>
+        $("input").keypress(function(event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        $("form").submit();
+    }
+});
+        </script>

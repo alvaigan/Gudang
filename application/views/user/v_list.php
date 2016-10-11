@@ -53,6 +53,7 @@
 									<th class="text-center">Password</th>
 									<th class="text-center">Nama</th>
 									<th class="text-center">Level</th>
+                  <th class="text-center">Subbagian</th>
 									<th class="text-center">Action</th>
 								</tr>
 							</thead>
@@ -87,6 +88,7 @@
 									}
 									?>
 									<td class="text-center" style="vertical-align:middle;"><?= $levels?></td>
+                  <td class="text-center" style="vertical-align:middle;"><?= $row->Subbagian?></td>
 									<td align="center">
                     <div class="btn-group-vertical">
                       <a class="btn btn-primary" href="<?= site_url("usermanager/edit/" . $row->ID_Akun)?>">
